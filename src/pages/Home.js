@@ -28,6 +28,7 @@ const Home = () => {
             <img src={captainMarvel} alt="Captain marvel" />
             <img src={captainAmerica} alt="Captain America" />
             <img src={blackWidow} alt="Black widow" />
+            <img src={hulk} alt="hulk" />
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@
     @include center;
     background-image: url("../../assets/img/bgBody.png");
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 40%;
     &--title {
@@ -20,9 +21,9 @@
     width: 60%;
     height: 100vh;
     background: $linear;
-    @include columnCenter;
+    @include columnCenterSpace;
     &__diaporama {
-      width: 49vmin;
+      width: 70vmin;
       overflow: hidden;
       border: 20px solid #ffffff;
       border-radius: 8px;
@@ -30,9 +31,10 @@
       &--wrapper {
         width: 100%;
         display: flex;
-        animation: slide 10s ease-in-out infinite;
+        animation: slide 10s infinite linear;
         img {
           max-height: 500px;
+          padding: 0 20px;
         }
       }
     }
