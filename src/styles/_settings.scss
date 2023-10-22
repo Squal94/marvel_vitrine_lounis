@@ -1,23 +1,71 @@
-// // Importation font
-// @font-face {
-//     font-family: "Sady";
-//     src: url(../assets/fonts/BAR_SADY-Regular.otf);
-//   }
-//   @font-face {
-//     font-family: "AlexBrush";
-//     src: url(../assets/fonts/AlexBrush-Regular.ttf);
-//   }
+// Importation font
 
-//   // variable color
-//   $writingColorcolorNav: rgb(46, 46, 46);
-//   $writingColor1: white;
-//   $writingColorHover1: rgba(217, 0, 0, 0.772);
+// h1 font
+@font-face {
+  font-family: "Marvel";
+  src: url(../assets/fonts/Marvel-Regular.ttf);
+}
 
-//   // variable size
-//   $fontSizeNav: 1.1rem;
-//   $withNavBtn: 150px;
+// title font
+@font-face {
+  font-family: "SuperSquad";
+  src: url(../assets/fonts/Marvel-Regular.ttf);
+}
 
-//   //Mixin
+// font
+@font-face {
+  font-family: "Komikax";
+  src: url(../assets/fonts/Marvel-Regular.ttf);
+}
+
+// variable color
+
+$color1: #0476f2;
+$color2: #ed1d24;
+$color3: #cccccc;
+$color4: #bbbbbb;
+$color5: #ffb400;
+
+$writingColor1: white;
+$writingColor1: #151515;
+
+// variable size
+
+$fontSizeNav: 1.2rem;
+$fontSize: 1.1rem;
+// $withNavBtn: 150px;
+
+// Variable fonts
+
+$fontH1: "Marvel", "Times New Roman", Times, serif;
+$fontTitle: "SuperSquad", "Times New Roman", Times, serif;
+$font: "Komikax", "Times New Roman", Times, serif;
+
+//Mixin
+
+@mixin columnCenter {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@mixin rowCenter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-family: $fontH1;
+  letter-spacing: 1rem;
+}
 
 //   @mixin BGAnimation() {
 //     background: linear-gradient(300deg, #79d5ff93, #ffffffbf, #ffffffb7);
@@ -25,15 +73,7 @@
 //     animation: gradient-animation 15s ease infinite;
 //   }
 
-//   @mixin columnStartCenter {
-//     display: flex;
-//     flex-flow: column nowrap;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-
 //   // Animation
-
 //   @keyframes gradient-animation {
 //     0% {
 //       background-position: 0% 50%;
@@ -45,7 +85,6 @@
 //       background-position: 0% 50%;
 //     }
 //   }
-
 //   @keyframes open-animation {
 //     0% {
 //       opacity: 0;
@@ -74,7 +113,6 @@
 //       transform: translate(0);
 //     }
 //   }
-
 //   @keyframes begin-animation {
 //     0% {
 //       opacity: 0;
@@ -83,15 +121,7 @@
 //       opacity: 1;
 //     }
 //   }
-
 //   //General setting
-
-body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  background-color: darkgrey;
-}
 
 //   a {
 //     text-decoration: none;
