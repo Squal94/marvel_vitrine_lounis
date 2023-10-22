@@ -38,3 +38,40 @@
     }
   }
 }
+
+// phone size diaporama
+
+// &__diaporama {
+//     width: 49vmin;
+//     overflow: hidden;
+//     border: 20px solid #ffffff;
+//     border-radius: 8px;
+//     box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+//     &--wrapper {
+//       width: 100%;
+//       display: flex;
+//       animation: slide 10s ease-in-out infinite;
+//       img {
+//         max-height: 500px;
+//       }
+//     }
+//   }
+
+// pc version
+
+// &__diaporama {
+//     width: 80vmin;
+//     overflow: hidden;
+//     border: 20px solid #ffffff;
+//     border-radius: 8px;
+//     box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+//     &--wrapper {
+//       width: 100%;
+//       display: flex;
+//       animation: slide 12s ease-in-out infinite;
+//       img {
+//         max-height: 500px;
+//         padding: 0 20px;
+//       }
+//     }
+//   }
