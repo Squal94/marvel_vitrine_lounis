@@ -1,0 +1,63 @@
+.btn-slide {
+  position: relative;
+  display: inline-block;
+  height: 100px;
+  width: 700px;
+  line-height: 50px;
+  margin: 25px 0;
+  padding: 0px;
+  border-radius: 25px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  background: $linear;
+}
+
+.btn-slide:active {
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(0.98);
+  transform: scale(0.96);
+}
+
+.btn-slide:hover {
+  background: $linearHover;
+}
+
+.btn-slide span.circle {
+  display: block;
+  background-color: #ffeaea;
+  position: absolute;
+  margin: 5px;
+  height: 85px;
+  width: 50px;
+  top: 0;
+  left: 0;
+  border-radius: 25%;
+  transition: all 1.5s ease;
+}
+
+.btn-slide:hover span.circle {
+  left: 100%;
+  margin-left: -55px;
+  background-color: #fff;
+  color: #79f1fc;
+}
+
+.btn-slide span.title {
+  text-align: center;
+  font-family: $fontTitle;
+  position: absolute;
+  top: 25px;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  color: $writingColor1;
+  transition: all 1.5s linear;
+}
+
+.btn-slide span.title-hover {
+  opacity: 0;
+}
+.btn-slide:hover span.title {
+  opacity: 0;
+}
+.btn-slide:hover span.title-hover {
+  opacity: 1;
+}

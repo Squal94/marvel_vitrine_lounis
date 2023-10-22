@@ -33,6 +33,13 @@ $linear: linear-gradient(
   rgba(253, 234, 235, 1) 50%,
   rgba(237, 29, 36, 1) 100%
 );
+$linearHover: linear-gradient(
+  166deg,
+  rgba(237, 29, 36, 1) 0%,
+  rgba(255, 255, 255, 1) 39%,
+  rgba(253, 234, 235, 1) 50%,
+  rgba(4, 118, 242, 1) 100%
+);
 
 $writingColor1: #ffffff;
 $writingColor1: #151515;

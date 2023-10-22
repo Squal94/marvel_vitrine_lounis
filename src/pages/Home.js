@@ -7,6 +7,7 @@ import ironMan from "./../assets/img/img5.png";
 import spiderMan from "./../assets/img/img6.png";
 import thor from "./../assets/img/img7.png";
 import captainAmerica from "./../assets/img/img8.png";
+import BtnSlide from "../components/BtnSlide";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
             <img src={hulk} alt="hulk" />
           </div>
         </div>
+        <BtnSlide />
       </div>
     </div>
   );
