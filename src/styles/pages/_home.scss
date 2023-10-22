@@ -20,5 +20,21 @@
     width: 60%;
     height: 100vh;
     background: $linear;
+    @include columnCenter;
+    &__diaporama {
+      width: 49vmin;
+      overflow: hidden;
+      border: 20px solid #ffffff;
+      border-radius: 8px;
+      box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+      &--wrapper {
+        width: 100%;
+        display: flex;
+        animation: slide 10s ease-in-out infinite;
+        img {
+          max-height: 500px;
+        }
+      }
+    }
   }
 }

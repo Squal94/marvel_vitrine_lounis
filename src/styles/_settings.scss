@@ -72,6 +72,7 @@ $font: "Komikax", "Times New Roman", Times, serif;
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   width: 100%;
 }
 
@@ -86,7 +87,16 @@ h1 {
 //     animation: gradient-animation 15s ease infinite;
 //   }
 
-//   // Animation
+// Animation
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-780%);
+  }
+}
 //   @keyframes gradient-animation {
 //     0% {
 //       background-position: 0% 50%;
