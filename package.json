@@ -2,7 +2,6 @@
   "name": "marvel_vitrine_lounis",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://squal94.github.io/Katsuryoku/marvel_vitrine_lounis",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
     "@testing-library/jest-dom": "^5.17.0",
