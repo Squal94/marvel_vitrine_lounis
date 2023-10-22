@@ -26,7 +26,15 @@ $color3: #cccccc;
 $color4: #bbbbbb;
 $color5: #ffb400;
 
-$writingColor1: white;
+$linear: linear-gradient(
+  166deg,
+  rgba(4, 118, 242, 1) 0%,
+  rgba(255, 255, 255, 1) 39%,
+  rgba(253, 234, 235, 1) 50%,
+  rgba(237, 29, 36, 1) 100%
+);
+
+$writingColor1: #ffffff;
 $writingColor1: #151515;
 
 // variable size
@@ -52,6 +60,11 @@ $font: "Komikax", "Times New Roman", Times, serif;
 @mixin rowCenter {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+@mixin center {
+  display: flex;
   justify-content: center;
   align-items: center;
 }

@@ -1,0 +1,24 @@
+.home {
+  @include rowCenter;
+  height: 100vh;
+  width: 100%;
+  &__left {
+    @include center;
+    background-image: url("../../assets/img/bgBody.png");
+    background-position: center;
+    height: 100vh;
+    width: 40%;
+    &--title {
+      span {
+        color: $color2;
+      }
+      text-align: center;
+      font-size: 10rem;
+    }
+  }
+  &__right {
+    width: 60%;
+    height: 100vh;
+    background: $linear;
+  }
+}
